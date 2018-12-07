@@ -113,15 +113,15 @@ public class TestHero {
         System.out.println("============================================");
 
         //8、按出生地分组后，统计各组人数
-        HashMap<String, Integer> countmap = new HashMap<>();
-        int count = 1;
-        for (Map.Entry<String, List<Hero>> loc : mapLoc.entrySet()) {
-            String key = loc.getKey();
-            countmap.put(key, count);
-            count++;
-        }
+//        HashMap<String, Integer> countmap = new HashMap<>();
+//        int count = 1;
+//        for (Map.Entry<String, List<Hero>> loc : mapLoc.entrySet()) {
+//            String key = loc.getKey();
+//            countmap.put(key, count);
+//            count++;
+//        }
         System.out.println("8、按出生地分组后，统计各组人数");
-        countmap.forEach((key,value)-> System.out.println("住在："+key+"的有: "+value+"个人"));
+        mapLoc.forEach((key,value)-> System.out.println("住在："+key+"的有: "+value.stream().count()+"个人"));
     }
 
 }
