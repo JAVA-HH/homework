@@ -13,6 +13,8 @@ public class JDBCTest {
         ResultSet rs = stat.getGeneratedKeys();
         rs.next();//获取自增列的值
         System.out.println(rs.getInt(1));
+        stat.close();
+        conn.close();
 
     }
 }
