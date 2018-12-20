@@ -39,7 +39,7 @@ public class Copy {
             HttpURLConnection urlConnection = (HttpURLConnection) new URL(s3).openConnection();
             InputStream in = urlConnection.getInputStream();
             String i = random.nextInt()+"";
-            FileOutputStream out = new FileOutputStream("E:\\tupian\\demo\\aaa" + i + ".png");
+            FileOutputStream out = new FileOutputStream("E:\\tupian\\demo\\aaa\\" + i + ".png");
             while (true){
                 byte[] bytes = new byte[1024 * 8];
                 int len = in.read(bytes);
