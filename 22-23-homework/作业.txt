@@ -1,4 +1,5 @@
-﻿2. 单表查询练习
+﻿
+xssdf 2. 单表查询练习
 1.查询姓“李”的老师的个数
 select count(tid) from teacher where tname  like '李%';   //1
 2.查询男女生人数个数
